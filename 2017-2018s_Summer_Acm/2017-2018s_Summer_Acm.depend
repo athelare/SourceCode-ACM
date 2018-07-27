@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1531018505 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July8_M_A_Fliptile.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+
+1531020467 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July8_M_B_Phys_Exp.cpp
+	<bits/stdc++.h>
+
+1531017091 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July8_M_C_Sum_Zero.cpp
+	<iostream>
+	<cstdio>
+	<algorithm>
+
+1531448721 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July13_M_A_Asteroids.cpp
+	<cstdio>
+	<vector>
+	<cstring>
+
+1531811307 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July17_N_A_Seria_Dictionary_Tree.cpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+
+1531910451 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/KMP_try_1.cpp
+	<cstdio>
+
+1531962305 source:/home/lijiyu/SourceCode/2017-2018s_Summer_Acm/July19_M_B_SameCalender.cpp
+	<stdio.h>
+
