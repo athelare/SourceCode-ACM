@@ -1,8 +1,11 @@
 #include<cstdio>
+#include<vector>
+using namespace std;
+vector<vector<int> > A(18);
 class Test{
-    const int N,**A;
+    vector<vector<int>> A;
 public:
-    Test(int n):N(n){
+    Test(int n):A(n){
         static int x[n][n];
     }
     void test(int x){
