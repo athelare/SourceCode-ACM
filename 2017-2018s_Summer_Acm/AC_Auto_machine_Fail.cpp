@@ -36,3 +36,41 @@ void Build_AC_automation(Node *root)
 		}
 	}
 }
+int query(Node *root)
+{ //i为主串指针，p为模式串指针 
+	int i,v,count=0;
+	Node *p=root;
+	int len=strlen(s);
+	for(i=0;i<len;i++)
+	{
+		v=s[i]-'a';
+		//由失败指针回溯查找，判断s[i]是否存在于Trie树中 
+		while(p->next[v]==NULL && p!=root)
+			p=p->fail;
+		p=p->next[v];//找到后p指针指向该结点 
+		if(p==NULL)//若指针返回为空，则没有找到与之匹配的字符 
+			p=root;
+		Node *temp=p;//匹配该结点后，沿其失败指针回溯，判断其它结点是否匹配 
+		while(temp!=root)//匹配结束控制 
+		{
+			if(temp->cnt>=0)//判断该结点是否被访问 
+			{
+				count+=temp->cnt;//由于cnt初始化为 0，所以只有cnt>0时才统计了单词的个数 
+				temp->cnt=-1;//标记已访问过 
+			}
+			else//结点已访问，退出循环 
+				break;
+			temp=temp->fail;//回溯 失败指针 继续寻找下一个满足条件的结点 
+		}
+	}
+	return count;
+}
+
+1
+5
+she
+he
+say
+shr
+her
+yasherhs

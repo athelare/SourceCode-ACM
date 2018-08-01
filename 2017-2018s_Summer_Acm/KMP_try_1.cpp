@@ -11,7 +11,7 @@ void getNext(char *pattern,int *next){
 }
 int main()
 {
-	char pattern[] = "aabcaaabaac";
+	char pattern[] = "ababc";
 	int next[20];
 	getNext(pattern,next);
 	for(int i=0;pattern[i];++i)
