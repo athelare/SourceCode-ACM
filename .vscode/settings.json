@@ -39,9 +39,13 @@
         "deque": "cpp",
         "forward_list": "cpp",
         "list": "cpp",
-        "unordered_set": "cpp"
+        "unordered_set": "cpp",
+        "ratio": "cpp",
+        "valarray": "cpp"
     },
-    "editor.fontSize": 18,
-    //"editor.fontFamily": "Consolas",
-    "git.ignoreLimitWarning": true
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": false,
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/usr/bin/python3"
 }
