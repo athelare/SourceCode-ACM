@@ -3,8 +3,10 @@
 #define popStack head--;
 #define pop q[tail++]
 #define empty (head == tail)
-char keyWords[10002][52];
-char str[1000002];
+#define MAXN 1000002
+#define SingleMax 52
+char keyWords[10002][SingleMax];
+char str[MAXN];
 struct Node{
     int cnt;
     Node*next[26];
